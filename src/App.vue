@@ -1,15 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MenuComponent/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png">
+  <h1>Elemento estatico</h1> -->
+  <hr/>
+    <!-- ESTO ES UN ELEMENTO DINAMICO -->
+  <router-view></router-view>
+  <hr/>
+  <!-- <HolaMundo/>
+  <CineComponent/>
+  <HomeComponent/>
+  <MusicaComponent/> -->
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HolaMundo from './components/HolaMundo.vue'
+// import HomeComponent from './components/HomeComponent.vue'
+// import CineComponent from './components/CineComponent.vue'
+// import MusicaComponent from './components/MusicaComponent.vue'
+import MenuComponent from './components/MenuComponent.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MenuComponent
+    // HolaMundo,HomeComponent,CineComponent,MusicaComponent
   }
 }
 </script>
